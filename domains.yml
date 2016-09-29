@@ -1,0 +1,20 @@
+token: "your-digital-ocean-api-token"
+v6address: "::1"
+v4address: "127.0.0.1"
+defaults:
+    - "NS @ ns1.digitalocean.com."
+    - "NS @ ns2.digitalocean.com."
+    - "NS @ ns3.digitalocean.com."
+    - "MX @ aspmx.l.google.com. 1"
+    - "MX @ alt1.aspmx.l.google.com. 5"
+    - "MX @ alt2.aspmx.l.google.com. 5"
+    - "MX @ alt3.aspmx.l.google.com. 10"
+    - "MX @ alt4.aspmx.l.google.com. 10"
+    - "TXT @ v=spf1 include:_spf.google.com a mx -all"
+    - "CNAME * {domain}."
+    - "AAAA @ {v6address}"
+    - "A @ {v4address}"
+---
+noswap.com:
+    - "TXT @ keybase-site-verification=61SfD6EF6d3aurMV1ZehczN0OBgpPkjGlac3psdFw5s"
+seinfeldquote.com: null
